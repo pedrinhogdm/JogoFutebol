@@ -1,20 +1,22 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "FAQDrFPYGabmE2FT9Mvo8m1cCp70zH/7lyA8oscPKRix3xZ1LInOQNh/9s9ZlY5tl173DRfdFQ6uw05DG/g5Hg==",
-  "success": true,
-  "projectFilePath": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj",
-=======
   "dgSpecHash": "aU4XqA1fuvvmedDtFKh0zy44+z5GPpsYqX+P/mF7i4xY7RAswShecG4p7rj4McUeP5gYpDNbXI2S1qECFakPaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedro\\JogoFutebol\\MyGame.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
-    "/home/archlinux/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "/home/archlinux/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
-    "/home/archlinux/.nuget/packages/microsoft.netcore.app.ref/6.0.27/microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
-    "/home/archlinux/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.27/microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
-    "/home/archlinux/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.27/microsoft.netcore.app.host.linux-x64.6.0.27.nupkg.sha512"
+    "C:\\Users\\pedro\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\pedro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\pedro\\JogoFutebol\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

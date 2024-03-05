@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<<<<<<< Updated upstream
-  <SourceFile>/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/Content/bola_insta.png</SourceFile>
-  <SourceTime>2024-03-05T11:20:16.6146565-03:00</SourceTime>
-  <DestFile>/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/Content/bin/DesktopGL/Content/bola_insta.xnb</DestFile>
-  <DestTime>2024-03-05T11:22:51.5496015-03:00</DestTime>
-=======
   <SourceFile>C:/Users/pedro/JogoFutebol/Content/bola_insta.png</SourceFile>
   <SourceTime>2024-03-04T20:55:35.0689833-03:00</SourceTime>
   <DestFile>C:/Users/pedro/JogoFutebol/Content/bin/DesktopGL/Content/bola_insta.xnb</DestFile>
-  <DestTime>2024-03-05T00:25:45.0556265-03:00</DestTime>
->>>>>>> Stashed changes
+  <DestTime>2024-03-05T12:36:27.8791055-03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T08:44:56-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj": {}
-  },
-  "projects": {
-    "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj",
-        "projectName": "MyGame",
-        "projectPath": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj",
-        "packagesPath": "/home/archlinux/.nuget/packages/",
-        "outputPath": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/obj/",
-=======
     "C:\\Users\\pedro\\JogoFutebol\\MyGame.csproj": {}
   },
   "projects": {
@@ -25,15 +12,21 @@
         "projectPath": "C:\\Users\\pedro\\JogoFutebol\\MyGame.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pedro\\JogoFutebol\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/archlinux/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,11 +76,15 @@
               "version": "[6.0.27, 6.0.27]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[6.0.27, 6.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
               "version": "[6.0.27, 6.0.27]"
             }
           ],
@@ -96,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/archlinux/.asdf/installs/dotnet/8.0.201/sdk/8.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

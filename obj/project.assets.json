@@ -107,11 +107,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj",
       "projectName": "MyGame",
       "projectPath": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/MyGame.csproj",
       "packagesPath": "/home/archlinux/.nuget/packages/",
       "outputPath": "/home/archlinux/Documentos/Monogame/aula1/JogoFutebol/obj/",
+=======
+      "projectUniqueName": "C:\\Users\\pedro\\JogoFutebol\\MyGame.csproj",
+      "projectName": "MyGame",
+      "projectPath": "C:\\Users\\pedro\\JogoFutebol\\MyGame.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pedro\\JogoFutebol\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/archlinux/.nuget/NuGet/NuGet.Config"

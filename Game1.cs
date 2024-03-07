@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,7 +13,7 @@ public class Game1 : Game
     private Texture2D _ballTexture;
     private Vector2 _ballPos;
     private Vector2 _ballDir;
-    private Random _random;
+    Random _random;
 
     public Game1()
     {
@@ -27,14 +27,15 @@ public class Game1 : Game
 
         base.Initialize();
     
-        //_ballPos.X = (GraphicsDevice.Viewport.Width / 2) - (_ballTexture.Width / 2.0f); -- Uma alternativa para a variável abaixo
+        _random = new Random();
 
         _ballPos.X = (_graphics.PreferredBackBufferWidth / 2.0f) - (_ballTexture.Width / 2.0f);
         _ballPos.Y = (_graphics.PreferredBackBufferHeight / 2.0f) - (_ballTexture.Height / 2.0f);
 
-        _ballDir = new Vector2(1.0f, 0.0f);
+        _ballDir = new Vector2(1.0f, GetRandomY());
+        _ballDir.Normalize();
 
-        _random = new Random();
+        
     }
 
     protected override void LoadContent()
@@ -53,23 +54,22 @@ public class Game1 : Game
 
             //-----------------------------//
 
-        const float speed = 5.0f; // pra bola se mover pra direita
+        const float speed = 5.0f; // Velocidade da bola
 
-        //_ballPos  = _ballPos + (_ballDir * speed); // entender melhor dps
-
-        // if(_ballPos.X + _ballTexture.Width > _graphics.PreferredBackBufferWidth){
-        //     _ballDir.X = -1.0f;
-        //     _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
-        // } else if(_ballPos.X < 0.0f){
-        //     _ballDir.X = 1.0f;
-        //     _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
-        // } else if(_ballPos.Y + _ballTexture.Width > _graphics.PreferredBackBufferHeight){
-	    // _ballDir.Y = -1.0f;
-	    // _ballDir.X = (_random.NextSingle() * 2.0f) - 1.0f; 
-        // }else if(_ballPos.Y < 0.0f){
-        //     _ballDir.Y = 1.0f;
-        //     _ballDir.X = (_random.NextSingle() * 2.0f) + 1.0f;
-        // }
+        _ballPos  = _ballPos + (_ballDir * speed); // entender melhor dps
+        if(_ballPos.X + _ballTexture.Width > _graphics.PreferredBackBufferWidth){
+            _ballDir.X = -1.0f;
+            _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
+        } else if(_ballPos.X < 0.0f){
+            _ballDir.X = 1.0f;
+            _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
+        } else if(_ballPos.Y > _graphics.PreferredBackBufferHeight - _ballTexture.Height){
+	        _ballPos.Y = _graphics.PreferredBackBufferHeight - _ballTexture.Height;
+            _ballDir.Y = -_ballDir.Y;
+	    } else if(_ballPos.Y < 0.0f){
+            _ballPos.Y = 0.0f;
+            _ballDir.Y = -_ballDir.Y;
+        }
         
         base.Update(gameTime);
     }
@@ -84,5 +84,9 @@ public class Game1 : Game
         _spriteBatch.End();
 
         base.Draw(gameTime);
+    }
+
+    private float GetRandomY(){
+        return (_random.NextSingle() * 2.0f) - 1.0f;
     }
 }

@@ -54,7 +54,7 @@ public class Game1 : Game
 
             //-----------------------------//
 
-        const float speed = 50.0f; // pra bola se mover pra direita
+        const float speed = 5.0f; // Velocidade da bola
 
         _ballPos  = _ballPos + (_ballDir * speed); // entender melhor dps
         if(_ballPos.X + _ballTexture.Width > _graphics.PreferredBackBufferWidth){

@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/pedro/JogoFutebol/Content/bola_insta.png</File>
-    <File>C:/Users/pedro/JogoFutebol/Content/campo.png</File>
+    <File>/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/bola_insta.png</File>
+    <File>/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/campo.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,1 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/bola_insta.png","/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/bin/DesktopGL/Content/bola_insta.xnb","TextureProcessor","Texture2DContent",4041,6809,0,3225415
+"/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/campo.png","/home/archlinux/Documentos/Monogame/aula1/porra/JogoFutebol/Content/bin/DesktopGL/Content/campo.xnb","TextureProcessor","Texture2DContent",15166,1536085,0,1037386

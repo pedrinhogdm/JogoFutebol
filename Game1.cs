@@ -27,6 +27,8 @@ public class Game1 : Game
 
         base.Initialize();
     
+        //_ballPos.X = (GraphicsDevice.Viewport.Width / 2) - (_ballTexture.Width / 2.0f); -- Uma alternativa para a variável abaixo
+
         _ballPos.X = (_graphics.PreferredBackBufferWidth / 2.0f) - (_ballTexture.Width / 2.0f);
         _ballPos.Y = (_graphics.PreferredBackBufferHeight / 2.0f) - (_ballTexture.Height / 2.0f);
 
@@ -53,21 +55,21 @@ public class Game1 : Game
 
         const float speed = 5.0f; // pra bola se mover pra direita
 
-        _ballPos  = _ballPos + (_ballDir * speed); // entender melhor dps
+        //_ballPos  = _ballPos + (_ballDir * speed); // entender melhor dps
 
-        if(_ballPos.X + _ballTexture.Width > _graphics.PreferredBackBufferWidth){
-            _ballDir.X = -1.0f;
-            _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
-        } else if(_ballPos.X < 0.0f){
-            _ballDir.X = 1.0f;
-            _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
-        } else if(_ballPos.Y + _ballTexture.Width > _graphics.PreferredBackBufferHeight){
-	    _ballDir.Y = -1.0f;
-	    _ballDir.X = (_random.NextSingle() * 2.0f) - 1.0f; 
-        }else if(_ballPos.Y < 0.0f){
-            _ballDir.Y = 1.0f;
-            _ballDir.X = (_random.NextSingle() * 2.0f) + 1.0f;
-        }
+        // if(_ballPos.X + _ballTexture.Width > _graphics.PreferredBackBufferWidth){
+        //     _ballDir.X = -1.0f;
+        //     _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
+        // } else if(_ballPos.X < 0.0f){
+        //     _ballDir.X = 1.0f;
+        //     _ballDir.Y = (_random.NextSingle() * 2.0f) - 1.0f;
+        // } else if(_ballPos.Y + _ballTexture.Width > _graphics.PreferredBackBufferHeight){
+	    // _ballDir.Y = -1.0f;
+	    // _ballDir.X = (_random.NextSingle() * 2.0f) - 1.0f; 
+        // }else if(_ballPos.Y < 0.0f){
+        //     _ballDir.Y = 1.0f;
+        //     _ballDir.X = (_random.NextSingle() * 2.0f) + 1.0f;
+        // }
         
         base.Update(gameTime);
     }
